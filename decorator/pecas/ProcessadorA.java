@@ -4,6 +4,7 @@
  */
 package trabalhofinal.trabalhofinalpooii.decorator.pecas;
 
+import trabalhofinal.trabalhofinalpooii.Processador;
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
 import trabalhofinal.trabalhofinalpooii.decorator.Peca;
 
@@ -11,7 +12,7 @@ import trabalhofinal.trabalhofinalpooii.decorator.Peca;
  *
  * @author Jeferson
  */
-public class ProcessadorA extends Peca{
+public class ProcessadorA extends Processador{
     
     public ProcessadorA(ComponenteComputador compComputador) {
         super(compComputador);

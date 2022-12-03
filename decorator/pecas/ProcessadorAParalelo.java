@@ -4,7 +4,7 @@
  */
 package trabalhofinal.trabalhofinalpooii.decorator.pecas;
 
-import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputadorParalelo;
+import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
 import trabalhofinal.trabalhofinalpooii.decorator.PecaParalela;
 
 /**
@@ -12,11 +12,11 @@ import trabalhofinal.trabalhofinalpooii.decorator.PecaParalela;
  * @author Jeferson
  */
 public class ProcessadorAParalelo extends PecaParalela {
-    
-    public ProcessadorAParalelo(ComponenteComputadorParalelo compComputador) {
+
+    public ProcessadorAParalelo(ComponenteComputador compComputador) {
         super(compComputador);
-        setDescricao("Processador i3");
+        setDescricao("Processador i3 paralelo");
         setValor(500);
     }
-    
+
 }

@@ -8,10 +8,10 @@ package trabalhofinal.trabalhofinalpooii.decorator;
  *
  * @author Jeferson
  */
-public class ComputadorParalelo01 extends ComponenteComputadorParalelo{
-    
-    public ComputadorParalelo01(){
-        setDescricao("Computador 01 paralelo");
-        setValor(1300);
+public class Positivo extends ComponenteComputador{
+     
+    public Positivo(){
+        setDescricao("Notebook Positivo");
+        setValor(1000);
     }
 }

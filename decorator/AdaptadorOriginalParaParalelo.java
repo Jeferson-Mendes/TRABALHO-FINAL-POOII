@@ -8,20 +8,21 @@ package trabalhofinal.trabalhofinalpooii.decorator;
  *
  * @author Jeferson
  */
-public class Adaptador extends ComponenteComputadorParalelo{
-    ComponenteComputador componente;
-    
-    public Adaptador(ComponenteComputador componente){
-        this.componente = componente;
+public class AdaptadorOriginalParaParalelo extends Peca{
+    PecaParalela pecaParalela;
+
+    public AdaptadorOriginalParaParalelo(ComponenteComputador compComputador, PecaParalela pecaParalela) {
+        super(compComputador);
+        this.pecaParalela = pecaParalela;
     }
     
     @Override
     public String getDescricao(){
-        return componente.getDescricao();
+        return pecaParalela.getDescricao();
     }
     
     @Override
     public double getValor(){
-        return componente.getValor();
+        return pecaParalela.getValor();
     }
 }

@@ -8,10 +8,10 @@ package trabalhofinal.trabalhofinalpooii.decorator;
  *
  * @author Jeferson
  */
-public class Computador01 extends ComponenteComputador{
+public class Aspire5 extends ComponenteComputador{
     
-    public Computador01(){
-        setDescricao("Computador 01");
-        setValor(1500);
+    public Aspire5(){
+        setDescricao("Acer Aspire 5");
+        setValor(2500);
     }
 }

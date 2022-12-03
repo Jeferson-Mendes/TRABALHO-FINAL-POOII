@@ -4,6 +4,7 @@
  */
 package trabalhofinal.trabalhofinalpooii.decorator.pecas;
 
+import trabalhofinal.trabalhofinalpooii.SSD;
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
 import trabalhofinal.trabalhofinalpooii.decorator.Peca;
 
@@ -11,9 +12,9 @@ import trabalhofinal.trabalhofinalpooii.decorator.Peca;
  *
  * @author Jeferson
  */
-public class SsdA extends Peca{
+public class SSDA extends SSD{
     
-    public SsdA(ComponenteComputador compComputador) {
+    public SSDA(ComponenteComputador compComputador) {
         super(compComputador);
         setDescricao("SSD 500GB");
         setValor(450);

@@ -4,6 +4,7 @@
  */
 package trabalhofinal.trabalhofinalpooii.decorator.pecas;
 
+import trabalhofinal.trabalhofinalpooii.SSD;
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
 import trabalhofinal.trabalhofinalpooii.decorator.Peca;
 
@@ -11,9 +12,9 @@ import trabalhofinal.trabalhofinalpooii.decorator.Peca;
  *
  * @author Jeferson
  */
-public class SsdB extends Peca{
+public class SSDB extends SSD{
     
-    public SsdB(ComponenteComputador compComputador) {
+    public SSDB(ComponenteComputador compComputador) {
         super(compComputador);
         setDescricao("SSD 256GB");
         setValor(300);

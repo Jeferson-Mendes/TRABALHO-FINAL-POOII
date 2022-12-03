@@ -2,21 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package trabalhofinal.trabalhofinalpooii.decorator.pecas;
+package trabalhofinal.trabalhofinalpooii;
 
-import trabalhofinal.trabalhofinalpooii.Processador;
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
-import trabalhofinal.trabalhofinalpooii.decorator.Peca;
 
 /**
  *
  * @author Jeferson
  */
-public class ProcessadorB extends Processador{
-    
-    public ProcessadorB(ComponenteComputador compComputador) {
+public class ComputadorConcreteCreatorAlemanha extends ComputadorCreator{
+
+    public ComputadorConcreteCreatorAlemanha(ComponenteComputador compComputador) {
         super(compComputador);
-        setDescricao("Processador Celeron");
+    }
+
+    @Override
+    public IMontaPecas montaPecas() {
+        return new FabricaAlemanha();
     }
     
 }

@@ -8,10 +8,10 @@ package trabalhofinal.trabalhofinalpooii.decorator;
  *
  * @author Jeferson
  */
-public class PecaParalela extends ComponenteComputadorParalelo {
-    private final ComponenteComputadorParalelo compComputador;
+public class PecaParalela extends ComponenteComputador {
+    private final ComponenteComputador compComputador;
     
-    public PecaParalela(ComponenteComputadorParalelo compComputador){
+    public PecaParalela(ComponenteComputador compComputador){
         this.compComputador = compComputador;
     }
     
