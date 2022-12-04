@@ -7,6 +7,8 @@ package trabalhofinal.trabalhofinalpooii;
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
 import trabalhofinal.trabalhofinalpooii.decorator.Aspire5;
 import trabalhofinal.trabalhofinalpooii.decorator.Positivo;
+import trabalhofinal.trabalhofinalpooii.observer.Client;
+import trabalhofinal.trabalhofinalpooii.observer.Manager;
 
 /**
  *
@@ -25,15 +27,29 @@ public class Testando {
     static void configure() {
         int flag = 0;
         
+        Manager manager = new Manager();
+
         ComponenteComputador aspire5 = new Aspire5();
         ComponenteComputador positivo = new Positivo();
         
-        if (flag == 0) {
+        Client cliente01 = new Client("Carlos", aspire5);
+        Client cliente02 = new Client("Maria", aspire5);
+        Client cliente03 = new Client("Carlita", positivo);
+        
+        manager.add(cliente03);
+        manager.add(cliente01);
+        manager.add(cliente02);
+        
+        manager.remove(cliente02);
+        
+        if (flag == 1) {
             // Fábrica Alemanha produz equipamentos com peças classe B
             compCreator = new ComputadorConcreteCreatorAlemanha(positivo);
+            manager.notifyEveryBody(positivo);
         } else {
             // Fábrica Brasil Produz equipamentos com peças melhores, classe A
             compCreator = new ComputadorConcreteCreatorBrazil(aspire5);
+            manager.notifyEveryBody(aspire5);
         }  
     }
     
