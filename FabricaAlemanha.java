@@ -4,6 +4,8 @@
  */
 package trabalhofinal.trabalhofinalpooii;
 
+import trabalhofinal.trabalhofinalpooii.decorator.SSD;
+import trabalhofinal.trabalhofinalpooii.decorator.Processador;
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
 import trabalhofinal.trabalhofinalpooii.decorator.pecas.ProcessadorB;
 import trabalhofinal.trabalhofinalpooii.decorator.pecas.SSDB;
@@ -12,6 +14,10 @@ import trabalhofinal.trabalhofinalpooii.decorator.pecas.SSDB;
  *
  * @author Jeferson
  */
+/*
+    No Factory method, representa o produto concreto.
+    São implementações diferentes da interface produto.
+*/
 public class FabricaAlemanha implements IMontaPecas{
 
     @Override

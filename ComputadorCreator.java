@@ -5,9 +5,6 @@
 package trabalhofinal.trabalhofinalpooii;
 
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
-import trabalhofinal.trabalhofinalpooii.decorator.Peca;
-import trabalhofinal.trabalhofinalpooii.decorator.pecas.ProcessadorA;
-import trabalhofinal.trabalhofinalpooii.decorator.pecas.SSDA;
 
 /**
  *

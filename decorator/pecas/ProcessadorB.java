@@ -4,7 +4,7 @@
  */
 package trabalhofinal.trabalhofinalpooii.decorator.pecas;
 
-import trabalhofinal.trabalhofinalpooii.Processador;
+import trabalhofinal.trabalhofinalpooii.decorator.Processador;
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
 import trabalhofinal.trabalhofinalpooii.decorator.Peca;
 
@@ -17,6 +17,7 @@ public class ProcessadorB extends Processador{
     public ProcessadorB(ComponenteComputador compComputador) {
         super(compComputador);
         setDescricao("Processador Celeron");
+        setValor(1500);
     }
     
 }

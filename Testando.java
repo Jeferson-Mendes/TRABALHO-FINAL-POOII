@@ -56,5 +56,7 @@ public class Testando {
     static void runBusinessLogic(){
         ComponenteComputador pc = compCreator.addPecas();
         System.out.println(pc.getDescricao());
+        System.out.println(pc.getValor());
+
     }
 }

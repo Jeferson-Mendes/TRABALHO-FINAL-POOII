@@ -4,7 +4,7 @@
  */
 package trabalhofinal.trabalhofinalpooii.decorator.pecas;
 
-import trabalhofinal.trabalhofinalpooii.SSD;
+import trabalhofinal.trabalhofinalpooii.decorator.SSD;
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
 
 /**

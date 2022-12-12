@@ -4,16 +4,20 @@
  */
 package trabalhofinal.trabalhofinalpooii;
 
+import trabalhofinal.trabalhofinalpooii.decorator.SSD;
+import trabalhofinal.trabalhofinalpooii.decorator.Processador;
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
 import trabalhofinal.trabalhofinalpooii.decorator.pecas.ProcessadorA;
-import trabalhofinal.trabalhofinalpooii.decorator.pecas.ProcessadorB;
 import trabalhofinal.trabalhofinalpooii.decorator.pecas.SSDA;
-import trabalhofinal.trabalhofinalpooii.decorator.pecas.SSDB;
 
 /**
  *
  * @author Jeferson
  */
+/*
+    No Factory method, representa o produto concreto.
+    São implementações diferentes da interface produto.
+*/
 public class FabricaBrazil implements IMontaPecas{
 
     @Override

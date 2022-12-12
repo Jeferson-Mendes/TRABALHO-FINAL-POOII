@@ -4,9 +4,8 @@
  */
 package trabalhofinal.trabalhofinalpooii.decorator.pecas;
 
-import trabalhofinal.trabalhofinalpooii.Processador;
+import trabalhofinal.trabalhofinalpooii.decorator.Processador;
 import trabalhofinal.trabalhofinalpooii.decorator.ComponenteComputador;
-import trabalhofinal.trabalhofinalpooii.decorator.Peca;
 
 /**
  *
